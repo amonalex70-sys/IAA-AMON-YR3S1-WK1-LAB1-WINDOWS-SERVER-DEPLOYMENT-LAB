@@ -32,15 +32,15 @@ The project provides hands-on experience in deploying and managing a Windows Ser
 
 The main objectives of this lab are to:
 
-- Install and configure **Windows Server 2019** as a virtual machine in VirtualBox.
-- Configure the virtual machine's network adapter using a **NAT Network**.
-- Assign a static IPv4 address and configure the server hostname as **DC01**.
+- Install and configure Windows Server 2019 as a virtual machine in VirtualBox.
+- Configure the virtual machine's network adapter using a NAT Network.
+- Assign a static IPv4 address and configure the server hostname as DC01.
 - Establish and test network connectivity from the Windows Server environment.
-- Install and configure **Active Directory Domain Services (AD DS)** using the domain `cyberlab.local`.
+- Install and configure Active Directory Domain Services (AD DS) using the domain cyberlab.local.
 - Create Organizational Units (OUs) and user accounts for Staff, Students, and IT_Admin.
-- Configure **Group Policy Objects (GPOs)** for wireless security, including SSID, WPA3, and 802.1X.
-- Install and configure **DHCP** with scopes for VLAN10 and VLAN20.
-- Install and configure **DNS** with forward and reverse lookup zones.
+- Configure Group Policy Objects (GPOs) for wireless security, including SSID, WPA3, and 802.1X.
+- Install and configure DHCP with scopes for VLAN10 and VLAN20.
+- Install and configure DNS with forward and reverse lookup zones.
 - Test network communication and verify the configured server services.
 - Take a clean virtual machine snapshot for recovery.
 - Document the installation, configuration, and testing procedures.
