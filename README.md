@@ -25,3 +25,16 @@
 This project focuses on installing and configuring **Windows Server 2019** in **Oracle VirtualBox** as an independent virtual server environment. The lab provides practical experience in Windows Server administration, including initial server configuration, static IPv4 address assignment, network connectivity testing, and server role management.
 
 The objective is to develop hands-on skills in server deployment, network administration, and managing Windows Server services in a virtualized environment.
+
+## 🎯 Lab Implementation Objectives
+
+The main objectives of this lab are to:
+
+- Install and configure **Windows Server 2019** as a virtual machine in Oracle VirtualBox.
+- Configure the virtual machine's network adapter using a **NAT Network**.
+- Assign a static IPv4 address (`10.0.0.230`) to the Windows Server.
+- Configure the initial Windows Server settings.
+- Explore and manage Windows Server roles and services.
+- Verify network connectivity from the Windows Server environment.
+- Gain practical experience in server deployment and administration.
+- Document the installation, configuration, and testing procedures.
