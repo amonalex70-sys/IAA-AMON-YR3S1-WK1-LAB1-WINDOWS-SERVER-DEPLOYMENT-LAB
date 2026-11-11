@@ -1,6 +1,6 @@
 <div align="center">
 
-# Windows Server Installation and Configuration
+# Windows server installation and configuration
 
 Installation, deployment, and configuration of Windows Server in a virtualized environment, covering essential server administration and network configuration.
 
