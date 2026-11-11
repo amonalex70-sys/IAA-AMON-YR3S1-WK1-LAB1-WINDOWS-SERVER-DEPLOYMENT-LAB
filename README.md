@@ -20,21 +20,26 @@
 </p>
 </div>
 
-## 🛠️ Windows Server Setup and Lab Overview
+## 🛠️ Windows Server Deployment and Configuration Overview
 
-This project focuses on installing and configuring **Windows Server 2019** in **Oracle VirtualBox** as an independent virtual server environment. The lab provides practical experience in Windows Server administration, including initial server configuration, static IPv4 address assignment, network connectivity testing, and server role management.
+This project focuses on deploying and configuring **Windows Server 2019** in **Oracle VirtualBox** within a virtualized network environment. The lab covers static IPv4 configuration, server hostname setup, and the implementation of essential Windows Server services, including **Active Directory Domain Services (AD DS), Organizational Units (OUs), Group Policy Objects (GPOs), DHCP, and DNS**.
 
-The objective is to develop hands-on skills in server deployment, network administration, and managing Windows Server services in a virtualized environment.
+The project provides hands-on experience in deploying and managing a Windows Server domain environment, creating and managing user accounts, applying security policies, and configuring network services. It aims to develop practical skills in server administration, centralized network management, and domain infrastructure.
 
 ## 🎯 Lab Implementation Objectives
 
 The main objectives of this lab are to:
 
-- Install and configure **Windows Server 2019** as a virtual machine in Oracle VirtualBox.
+- Install and configure **Windows Server 2019** as a virtual machine in VirtualBox.
 - Configure the virtual machine's network adapter using a **NAT Network**.
-- Assign a static IPv4 address (`10.0.0.230`) to the Windows Server.
-- Configure the initial Windows Server settings.
-- Explore and manage Windows Server roles and services.
-- Verify network connectivity from the Windows Server environment.
-- Gain practical experience in server deployment and administration.
+- Assign a static IPv4 address and configure the server hostname as **DC01**.
+- Establish and test network connectivity from the Windows Server environment.
+- Install and configure **Active Directory Domain Services (AD DS)** using the domain `cyberlab.local`.
+- Create Organizational Units (OUs) and user accounts for Staff, Students, and IT_Admin.
+- Configure **Group Policy Objects (GPOs)** for wireless security, including SSID, WPA3, and 802.1X.
+- Install and configure **DHCP** with scopes for VLAN10 and VLAN20.
+- Install and configure **DNS** with forward and reverse lookup zones.
+- Test network communication and verify the configured server services.
+- Take a clean virtual machine snapshot for recovery.
 - Document the installation, configuration, and testing procedures.
+- Develop practical skills in Windows Server administration, domain management, and network infrastructure for future projects.
