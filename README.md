@@ -24,7 +24,7 @@
 
 ## 🛠️ Windows Server Deployment and Configuration Overview
 
-This project focuses on deploying and configuring **Windows Server 2019** in **Oracle VirtualBox** within a virtualized network environment. The lab covers static IPv4 configuration, server hostname setup, and the implementation of essential Windows Server services, including **Active Directory Domain Services (AD DS), Organizational Units (OUs), Group Policy Objects (GPOs), DHCP, and DNS**.
+This project focuses on deploying and configuring **Windows Server** in **Oracle VirtualBox** within a virtualized network environment. The lab covers static IPv4 configuration, server hostname setup, and the implementation of essential Windows Server services, including **Active Directory Domain Services (AD DS), Organizational Units (OUs), Group Policy Objects (GPOs), DHCP, and DNS**.
 
 The project provides hands-on experience in deploying and managing a Windows Server domain environment, creating and managing user accounts, applying security policies, and configuring network services. It aims to develop practical skills in server administration, centralized network management, and domain infrastructure.
 
@@ -32,11 +32,11 @@ The project provides hands-on experience in deploying and managing a Windows Ser
 
 The main objectives of this lab are to:
 
-- Install and configure Windows Server 2019 as a virtual machine in VirtualBox.
+- Install and configure Windows Server as a virtual machine in Oracle VirtualBox.
 - Configure the virtual machine's network adapter using a NAT Network.
-- Assign a static IPv4 address and configure the server hostname as DC01.
+- Assign a static IPv4 address and configure the server hostname as `DC01`.
 - Establish and test network connectivity from the Windows Server environment.
-- Install and configure Active Directory Domain Services (AD DS) using the domain cyberlab.local.
+- Install and configure Active Directory Domain Services (AD DS) using the domain `cyberlab.local`.
 - Create Organizational Units (OUs) and user accounts for Staff, Students, and IT_Admin.
 - Configure Group Policy Objects (GPOs) for wireless security, including SSID, WPA3, and 802.1X.
 - Install and configure DHCP with scopes for VLAN10 and VLAN20.
@@ -45,3 +45,21 @@ The main objectives of this lab are to:
 - Take a clean virtual machine snapshot for recovery.
 - Document the installation, configuration, and testing procedures.
 - Develop practical skills in Windows Server administration, domain management, and network infrastructure for future projects.
+
+## 🛡️ Lab Purpose and Security Scope
+
+This lab establishes a controlled virtual environment for learning and practising Windows Server administration, network infrastructure management, and cybersecurity fundamentals.
+
+The lab focuses on the deployment, configuration, and management of essential Windows Server services, including:
+
+- Windows Server installation and initial configuration.
+- Active Directory Domain Services (AD DS) deployment and management.
+- Domain user accounts, groups, and Organizational Unit (OU) administration.
+- Group Policy Objects (GPOs) configuration and implementation.
+- DNS and DHCP services configuration and management.
+- Network services administration and connectivity verification.
+- Security policies, authentication, and access control management.
+- Basic vulnerability assessment and security testing.
+- Installation and configuration of relevant cybersecurity tools.
+
+⚠️ Security Notice: This lab is designed for educational purposes, practical training, and authorized security testing. All activities must be performed within the designated lab environment or on systems for which proper authorization has been obtained. Testing or accessing systems without permission is strictly prohibited.
