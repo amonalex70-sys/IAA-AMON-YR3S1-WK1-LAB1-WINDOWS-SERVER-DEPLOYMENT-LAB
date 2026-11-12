@@ -1,10 +1,10 @@
 <div align="center">
 
 
-# Windows Server 2019 Installation and Server Role Configuration in VirtualBox
+# Windows Server Installation and Server Role Configuration in VirtualBox
 
 
-**Installing and configuring Windows Server 2019 in Oracle VirtualBox, focusing on server role management, static IPv4 configuration, and network administration.**
+**Installing and configuring Windows Server in Oracle VirtualBox, focusing on server role management, static IPv4 configuration, and network administration.**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Project-Windows%20Server-404040?style=flat-square&labelColor=C00000" />
