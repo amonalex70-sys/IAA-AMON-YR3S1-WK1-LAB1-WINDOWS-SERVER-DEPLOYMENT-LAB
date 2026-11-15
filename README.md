@@ -38,7 +38,7 @@ The main objectives of this lab are to:
 - Configure the virtual network adapter to use a NAT Network.
 - Assign a static IPv4 address and configure the server hostname as `DC01`.
 - Install and configure Active Directory Domain Services (AD DS) and establish the domain `cyberlab.local`.
-- Create Organizational Units (OUs) and user accounts for Staff, Students, and IT_Admin.
+- Create and manage Organizational Units (OUs) and user accounts in Active Directory according to the lab's organizational structure.
 - Configure Group Policy Objects (GPOs) to manage wireless network security settings, including SSID, WPA3-Enterprise, and 802.1X.
 - Install and configure DHCP scopes for VLAN10 and VLAN20.
 - Configure DNS forward and reverse lookup zones.
@@ -117,7 +117,7 @@ The Active Directory Domain Services (AD DS) role was installed on `DC01`, and t
 
 ## Step 4: Create Organizational Units (OUs) and Domain User Accounts
 
-Organizational Units (OUs) were created in Active Directory to organize Staff, Students, and IT_Admin accounts. Domain user accounts were then created and assigned to their respective OUs for centralized user management and administration.
+Organizational Units (OUs) were created in Active Directory to organize domain users according to the lab's structure. User accounts were then created and assigned to their respective OUs to support centralized user management and administration.
 
 <img width="1088" height="791" alt="WS-OU   USERs" src="https://github.com/user-attachments/assets/c523c65a-d6e3-42e1-8afa-1d5662651312" />
 
