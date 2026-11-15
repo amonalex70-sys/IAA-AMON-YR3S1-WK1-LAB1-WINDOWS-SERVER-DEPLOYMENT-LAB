@@ -52,3 +52,21 @@ This lab provides a controlled virtual environment for Windows Server administra
 It focuses on deploying and managing essential Windows Server services, including Active Directory Domain Services (AD DS), DNS, DHCP, and Group Policy. The environment also supports practical learning in domain management, user administration, network configuration, and enterprise security policies.
 
 **Security Notice:** This environment is intended strictly for educational purposes, system administration practice, and authorized security testing. All activities must remain within the controlled lab environment or be performed on systems for which explicit permission has been granted. Unauthorized access, modification, or testing of external systems is prohibited.
+
+## ⚙️ Lab infrastructure and system Specifications
+
+| 🧩 Component | ⚙️ Configuration |
+|---|---|
+| 🖥️ Host OS | Kali Linux 2026.3 |
+| 🧠 Host RAM | 8 GB |
+| ⚡ Processor | Intel Core i5 |
+| 🧰 Virtualization Platform | Oracle VirtualBox 7.2.20 |
+| 🪟 Server OS | Windows Server 2025 Standard Evaluation (Desktop Experience) |
+| 🧠 Server RAM | 4 GB (4096 MB) |
+| 🌐 Virtual Network | NAT Network |
+| 📡 Network Address | 10.0.0.0/24 |
+| 🖥️ Server Hostname | DC01 |
+| 📍 Server IPv4 Address | 10.0.0.230/24 |
+| 🚪 Default Gateway | 10.0.0.1 |
+| 🌍 DNS Server | 10.0.0.230 |
+| 🏢 Domain Name | cyberlab.local |
