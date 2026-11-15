@@ -123,5 +123,7 @@ Group Policy Objects (GPOs) were created and configured to manage wireless netwo
 
 The DHCP Server role was installed and configured on `DC01`, with DHCP scopes for VLAN10 and VLAN20 to manage IP address allocation and network configuration for client devices.
 
+## Step 7: Install and Configure DNS Server
 
+The DNS Server role was installed and configured to provide name resolution within the `cyberlab.local` domain, allowing domain-joined computers to locate the domain controller and communicate using hostnames.
 
