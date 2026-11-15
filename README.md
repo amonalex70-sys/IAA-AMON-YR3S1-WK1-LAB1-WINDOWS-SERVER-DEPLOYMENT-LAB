@@ -1,65 +1,54 @@
 <div align="center">
 
-
 # Windows Server Installation and Server Role Configuration in VirtualBox
 
-
-**Installing and configuring Windows Server in Oracle VirtualBox, focusing on server role management, static IPv4 configuration, and network administration.**
+**Deploying and configuring Windows Server in Oracle VirtualBox, focusing on server role management, Active Directory, and network administration.**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Project-Windows%20Server-404040?style=flat-square&labelColor=C00000" />
   <img src="https://img.shields.io/badge/VirtualBox-v7.2.20-0070C0?style=flat-square&labelColor=000000&logo=virtualbox&logoColor=white" />
-  <img src="https://img.shields.io/badge/Windows%20Server-2019-0078D4?style=flat-square&labelColor=000000&logo=windows&logoColor=white" />
+  <img src="https://img.shields.io/badge/Windows%20Server-2025-0078D4?style=flat-square&labelColor=000000&logo=windows&logoColor=white" />
   <img src="https://img.shields.io/badge/Kali%20Linux-v2026.3-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
   <img src="https://img.shields.io/badge/Network-NAT%20Network-238F89?style=flat-square&labelColor=000000" />
   <img src="https://img.shields.io/badge/IPv4-10.0.0.230-238F89?style=flat-square&labelColor=000000" />
-  <img src="https://img.shields.io/badge/Focus-Server%20Configuration-C00000?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/Focus-Server%20Administration-C00000?style=flat-square&labelColor=000000" />
   <img src="https://img.shields.io/badge/Technology-Virtualization-404040?style=flat-square&labelColor=C00000" />
   <img src="https://img.shields.io/badge/Platform-GitHub-404040?style=flat-square&labelColor=0070C0&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Practice-Server%20Administration-E87500?style=flat-square&labelColor=000000" />
-  <img src="https://img.shields.io/badge/Program-IAA-404040?style=flat-square&labelColor=C00000" />
+  <img src="https://img.shields.io/badge/Institution-IAA-404040?style=flat-square&labelColor=C00000" />
   <img src="https://img.shields.io/badge/Mentor-Waqas%20Karim%20(CCIE)-C00000?style=flat-square" />
 </p>
+
 </div>
 
 ## 🛠️ Windows Server Deployment and Configuration Overview
 
-This project focuses on deploying and configuring **Windows Server** in **Oracle VirtualBox** within a virtualized network environment. The lab covers static IPv4 configuration, server hostname setup, and the implementation of essential Windows Server services, including **Active Directory Domain Services (AD DS), Organizational Units (OUs), Group Policy Objects (GPOs), DHCP, and DNS**.
+This project involves deploying Windows Server 2025 Standard Evaluation (Desktop Experience) as a virtual machine using Oracle VirtualBox 7.2.20 on a Kali Linux 2026.3 host system.
 
-The project provides hands-on experience in deploying and managing a Windows Server domain environment, creating and managing user accounts, applying security policies, and configuring network services. It aims to develop practical skills in server administration, centralized network management, and domain infrastructure.
+The deployment establishes a Windows Server environment configured with a NAT Network for virtual network connectivity. The server is assigned a static IPv4 address and configured with the hostname `DC01` before being promoted to a domain controller for the `cyberlab.local` domain.
 
-## 🎯 Lab Implementation Objectives
+The configuration covers the installation and management of essential server roles and services, including Active Directory Domain Services (AD DS), DNS, DHCP, and Group Policy. It also includes domain user administration, Organizational Unit (OU) management, wireless security policy configuration, and DHCP scope configuration for VLAN10 and VLAN20.
+
+The overall objective is to build practical experience in Windows Server deployment, domain administration, network services, and enterprise security management within a controlled virtualized environment.
+
+## Lab Implementation Objectives
 
 The main objectives of this lab are to:
 
-- Install and configure Windows Server as a virtual machine in Oracle VirtualBox.
-- Configure the virtual machine's network adapter using a NAT Network.
+- Install and configure Windows Server as a virtual machine using Oracle VirtualBox.
+- Configure the virtual network adapter to use a NAT Network.
 - Assign a static IPv4 address and configure the server hostname as `DC01`.
-- Establish and test network connectivity from the Windows Server environment.
-- Install and configure Active Directory Domain Services (AD DS) using the domain `cyberlab.local`.
+- Install and configure Active Directory Domain Services (AD DS) and establish the domain `cyberlab.local`.
 - Create Organizational Units (OUs) and user accounts for Staff, Students, and IT_Admin.
-- Configure Group Policy Objects (GPOs) for wireless security, including SSID, WPA3, and 802.1X.
-- Install and configure DHCP with scopes for VLAN10 and VLAN20.
-- Install and configure DNS with forward and reverse lookup zones.
-- Test network communication and verify the configured server services.
-- Take a clean virtual machine snapshot for recovery.
+- Configure Group Policy Objects (GPOs) to manage wireless network security settings, including SSID, WPA3-Enterprise, and 802.1X.
+- Install and configure DHCP scopes for VLAN10 and VLAN20.
+- Configure DNS forward and reverse lookup zones.
+- Create a clean virtual machine snapshot to support recovery and rollback.
 - Document the installation, configuration, and testing procedures.
-- Develop practical skills in Windows Server administration, domain management, and network infrastructure for future projects.
 
-## 🛡️ Lab Purpose and Security Scope
+## 🔐 Lab Purpose and Security Scope
 
-This lab establishes a controlled virtual environment for learning and practising Windows Server administration, network infrastructure management, and cybersecurity fundamentals.
+This lab provides a controlled virtual environment for Windows Server administration, network infrastructure management, and cybersecurity practice.
 
-The lab focuses on the deployment, configuration, and management of essential Windows Server services, including:
+It focuses on deploying and managing essential Windows Server services, including Active Directory Domain Services (AD DS), DNS, DHCP, and Group Policy. The environment also supports practical learning in domain management, user administration, network configuration, and enterprise security policies.
 
-- Windows Server installation and initial configuration.
-- Active Directory Domain Services (AD DS) deployment and management.
-- Domain user accounts, groups, and Organizational Unit (OU) administration.
-- Group Policy Objects (GPOs) configuration and implementation.
-- DNS and DHCP services configuration and management.
-- Network services administration and connectivity verification.
-- Security policies, authentication, and access control management.
-- Basic vulnerability assessment and security testing.
-- Installation and configuration of relevant cybersecurity tools.
-
-⚠️ Security Notice: This lab is designed for educational purposes, practical training, and authorized security testing. All activities must be performed within the designated lab environment or on systems for which proper authorization has been obtained. Testing or accessing systems without permission is strictly prohibited.
+**Security Notice:** This environment is intended strictly for educational purposes, system administration practice, and authorized security testing. All activities must remain within the controlled lab environment or be performed on systems for which explicit permission has been granted. Unauthorized access, modification, or testing of external systems is prohibited.
