@@ -107,13 +107,19 @@ A static IPv4 address was assigned to the Windows Server to ensure consistent ne
 | Alternate DNS Server | `8.8.8.8` |
 | Network Address | `10.0.0.0/24` |
 
+<img width="690" height="614" alt="WS-Static IPv4 Configuration" src="https://github.com/user-attachments/assets/703d19db-99f9-4468-84c8-982375943265" />
+
 ## Step 3: Install and Configure Active Directory Domain Services (AD DS)
 
 The Active Directory Domain Services (AD DS) role was installed on `DC01`, and the server was promoted to a domain controller by creating a new forest named `cyberlab.local` for centralized domain authentication and administration.
 
+<img width="1088" height="791" alt="WS-AD DS complete" src="https://github.com/user-attachments/assets/103df75d-3f86-4f51-8674-44ed0d843c27" />
+
 ## Step 4: Create Organizational Units (OUs) and Domain User Accounts
 
 Organizational Units (OUs) were created in Active Directory to organize Staff, Students, and IT_Admin accounts. Domain user accounts were then created and assigned to their respective OUs for centralized user management and administration.
+
+<img width="1088" height="791" alt="WS-OU   USERs" src="https://github.com/user-attachments/assets/c523c65a-d6e3-42e1-8afa-1d5662651312" />
 
 ## Step 5: Configure Group Policy Objects (GPOs)
 
