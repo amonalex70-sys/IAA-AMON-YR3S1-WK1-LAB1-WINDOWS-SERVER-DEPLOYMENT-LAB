@@ -70,3 +70,58 @@ It focuses on deploying and managing essential Windows Server services, includin
 | 🚪 Default Gateway | 10.0.0.1 |
 | 🌍 DNS Server | 10.0.0.230 |
 | 🏢 Domain Name | cyberlab.local |
+
+
+## ⚙️ Windows Server Setup and Configuration Steps
+
+## Step 1: Add and Install Windows Server 2025 in a Virtual Machine
+
+A virtual machine named `WS2025` was created in Oracle VirtualBox with 4 GB RAM and a NAT Network connection. Windows Server 2025 Standard Evaluation (Desktop Experience) was installed using an ISO image.
+
+**Virtual Machine Specifications**
+
+| Category | Specification |
+|---|---|
+| VM Name | `WS2025` |
+| Guest Operating System | Microsoft Windows Server |
+| System Type | Windows Server 2025 (64-bit) |
+| Edition | Standard Evaluation (Desktop Experience) |
+| Allocated Memory | 4 GB (4096 MB) |
+| Network Configuration | NAT Network |
+
+<img width="1356" height="740" alt="Windows Server Virtual Machine" src="https://github.com/user-attachments/assets/3d66150d-ad53-456f-93ad-6c4b77c1ea3a" />
+
+## Step 2: Configure Static IPv4 Address and Server Hostname
+
+A static IPv4 address was assigned to the Windows Server to ensure consistent network identification and communication within the virtual lab. The server hostname was also changed to `DC01` to establish its identity before configuring Active Directory Domain Services (AD DS).
+
+**Network Configuration**
+
+| Category | Specification |
+|---|---|
+| Hostname | `DC01` |
+| IP Address | `10.0.0.230` |
+| Subnet Mask | `255.255.255.0` |
+| Default Gateway | `10.0.0.1` |
+| Preferred DNS Server | `10.0.0.230` |
+| Alternate DNS Server | `8.8.8.8` |
+| Network Address | `10.0.0.0/24` |
+
+## Step 3: Install and Configure Active Directory Domain Services (AD DS)
+
+The Active Directory Domain Services (AD DS) role was installed on `DC01`, and the server was promoted to a domain controller by creating a new forest named `cyberlab.local` for centralized domain authentication and administration.
+
+## Step 4: Create Organizational Units (OUs) and Domain User Accounts
+
+Organizational Units (OUs) were created in Active Directory to organize Staff, Students, and IT_Admin accounts. Domain user accounts were then created and assigned to their respective OUs for centralized user management and administration.
+
+## Step 5: Configure Group Policy Objects (GPOs)
+
+Group Policy Objects (GPOs) were created and configured to manage wireless network security settings, including SSID, WPA3-Enterprise, and 802.1X authentication.
+
+## Step 6: Install and Configure DHCP Server
+
+The DHCP Server role was installed and configured on `DC01`, with DHCP scopes for VLAN10 and VLAN20 to manage IP address allocation and network configuration for client devices.
+
+
+
