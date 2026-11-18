@@ -125,11 +125,21 @@ Organizational Units (OUs) were created in Active Directory to organize domain u
 
 Group Policy Objects (GPOs) were created and configured to manage wireless network security settings, including SSID, WPA3-Enterprise, and 802.1X authentication.
 
+<img width="850" height="734" alt="Creating GPO Link " src="https://github.com/user-attachments/assets/7296b13f-eddc-433a-9e9f-59e9a9c6fa3a" />
+
+
 ## Step 6: Install and Configure DHCP Server
 
 The DHCP Server role was installed and configured on `DC01`, with DHCP scopes for VLAN10 and VLAN20 to manage IP address allocation and network configuration for client devices.
 
+<img width="805" height="700" alt="DHCP Scope" src="https://github.com/user-attachments/assets/67edc35f-5e4a-484f-a43f-1dd779315626" />
+
+
 ## Step 7: Install and Configure DNS Server
 
 The DNS Server role was installed and configured to provide name resolution within the `cyberlab.local` domain, allowing domain-joined computers to locate the domain controller and communicate using hostnames.
+
+<img width="805" height="700" alt="DNS" src="https://github.com/user-attachments/assets/50469013-1a45-421c-864e-ea96413308c0" />
+
+
 
