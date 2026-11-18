@@ -1,6 +1,6 @@
 <div align="center">
 
-# Windows Server Installation and Server Role Configuration in VirtualBox
+# Windows server installation and server role configuration in VirtualBox
 
 **Deploying and configuring Windows Server in Oracle VirtualBox, focusing on server role management, Active Directory, and network administration.**
 
@@ -20,7 +20,7 @@
 
 </div>
 
-## 🛠️ Windows Server Deployment and Configuration Overview
+## 🛠️ Windows server deployment and configuration overview
 
 This project involves deploying Windows Server 2025 Standard Evaluation (Desktop Experience) as a virtual machine using Oracle VirtualBox 7.2.20 on a Kali Linux 2026.3 host system.
 
@@ -30,7 +30,7 @@ The configuration covers the installation and management of essential server rol
 
 The overall objective is to build practical experience in Windows Server deployment, domain administration, network services, and enterprise security management within a controlled virtualized environment.
 
-## Lab Implementation Objectives
+## Lab implementation objectives
 
 The main objectives of this lab are to:
 
@@ -45,7 +45,7 @@ The main objectives of this lab are to:
 - Create a clean virtual machine snapshot to support recovery and rollback.
 - Document the installation, configuration, and testing procedures.
 
-## 🔐 Lab Purpose and Security Scope
+## 🔐 Lab purpose and security scope
 
 This lab provides a controlled virtual environment for Windows Server administration, network infrastructure management, and cybersecurity practice.
 
@@ -107,7 +107,7 @@ A static IPv4 address was assigned to the Windows Server to ensure consistent ne
 | Alternate DNS Server | `8.8.8.8` |
 | Network Address | `10.0.0.0/24` |
 
-<img width="690" height="614" alt="WS-Static IPv4 Configuration" src="https://github.com/user-attachments/assets/703d19db-99f9-4468-84c8-982375943265" />
+<img width="805" height="700" alt="WS-Static IPv4 Configuration" src="https://github.com/user-attachments/assets/3b8cfa1b-d81f-4c6e-9336-d46a28d16f32" />
 
 ## Step 3: Install and Configure Active Directory Domain Services (AD DS)
 
@@ -140,6 +140,99 @@ The DHCP Server role was installed and configured on `DC01`, with DHCP scopes fo
 The DNS Server role was installed and configured to provide name resolution within the `cyberlab.local` domain, allowing domain-joined computers to locate the domain controller and communicate using hostnames.
 
 <img width="805" height="700" alt="DNS" src="https://github.com/user-attachments/assets/50469013-1a45-421c-864e-ea96413308c0" />
+
+
+# 🐞 Problems Encountered & Solutions
+
+Documenting troubleshooting procedures helps identify configuration issues, improve system reliability, and provide useful references for future lab activities.
+
+## Problem 1: DHCP Server Configuration Error (Error 20070)
+
+During DHCP Server configuration, I encountered **Error 20070** when attempting to configure and authorize the DHCP Server while logged in with a standard user account. The configuration could not be completed because the account did not have the required administrative privileges.
+
+**Solution:** I switched from the standard user account to an account with the appropriate administrative privileges and repeated the DHCP Server configuration. The configuration and authorization process completed successfully.
+
+> **Note:** DHCP Server configuration and authorization require appropriate administrative permissions, particularly membership in the relevant domain administrative groups.
+
+---
+
+# 💡 What I Learned
+
+Through this project, I gained practical experience installing, configuring, and administering a Windows Server 2025 environment using Oracle VirtualBox.
+
+The most important concepts I learned include:
+
+### 1. Virtualization and Server Installation
+
+I learned how to create and configure a virtual machine in Oracle VirtualBox and install Windows Server 2025 Standard Evaluation (Desktop Experience). I also gained experience allocating system resources and configuring virtual hardware.
+
+### 2. Initial Server Configuration
+
+I learned how to configure essential server settings, including the computer name, hostname, network adapter, and system administration settings required to prepare a server for deployment.
+
+### 3. Network Configuration
+
+I learned how to configure a static IPv4 address, subnet mask, default gateway, and DNS settings. I also gained experience testing network connectivity between virtual machines.
+
+### 4. Active Directory Domain Services (AD DS)
+
+I learned how to install and configure Active Directory Domain Services and promote a Windows Server machine to a domain controller. This introduced me to centralized authentication, directory services, and domain-based network administration.
+
+### 5. Organizational Units and User Account Management
+
+I learned how to create Organizational Units (OUs) and domain user accounts in Active Directory. I also gained an understanding of how directory objects can be organized to support centralized user and administrative management.
+
+### 6. DHCP Server Installation and Configuration
+
+I learned how to install and configure the DHCP Server role, authorize the DHCP server in Active Directory, and understand how DHCP automatically assigns IP addresses and other network configuration parameters to client machines.
+
+### 7. DNS Server Installation and Configuration
+
+I learned how to install and configure the DNS Server role and understand its importance in domain environments. DNS enables domain name resolution and supports communication between domain-joined computers and the domain controller.
+
+### 8. Troubleshooting and Documentation
+
+I developed practical troubleshooting skills by investigating DHCP configuration and authorization errors, identifying account permission requirements, switching to an appropriately privileged account, and successfully completing the configuration.
+
+### 9. Windows Server Administration
+
+I established a foundation in Windows Server administration, including server deployment, domain controller management, centralized user administration, and network service configuration.
+
+---
+
+# 🔐 Security & Ethical Use
+
+This laboratory environment is designed strictly for educational purposes, practical Windows Server administration, and authorized cybersecurity training.
+
+All configuration, testing, and security assessments must be conducted within the controlled laboratory environment or on systems for which explicit authorization has been granted.
+
+---
+
+# 🔗 Tools & Resources
+
+- **Oracle VirtualBox:** [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
+- **Windows Server:** [https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2025](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2025)
+- **Microsoft Learn:** [https://learn.microsoft.com/en-us/windows-server/](https://learn.microsoft.com/en-us/windows-server/)
+
+---
+
+# 👤 Author
+
+**Amon Alex**
+Cybersecurity Student | Electronics, Telecommunications & Cybersecurity
+
+**LinkedIn:** [Amon Alex](https://www.linkedin.com/in/amon-lowasa-60877a42a/)
+
+---
+
+# 📌 Project Information
+
+**Program Name:** Cybersecurity at IAA
+**Project:** Windows Server 2025 Installation and Configuration
+**Virtualization Platform:** Oracle VirtualBox 7.2.20
+**Server Edition:** Windows Server 2025 Standard Evaluation (Desktop Experience)
+
+**Repository:** GitHub
 
 
 
