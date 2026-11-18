@@ -72,9 +72,9 @@ It focuses on deploying and managing essential Windows Server services, includin
 | 🏢 Domain Name | cyberlab.local |
 
 
-## ⚙️ Windows Server Setup and Configuration Steps
+## ⚙️ Windows server setup and configuration steps
 
-## Step 1: Add and Install Windows Server 2025 in a Virtual Machine
+## Step 1: Add and install windows server 2025 in a Virtual Machine
 
 A virtual machine named `WS2025` was created in Oracle VirtualBox with 4 GB RAM and a NAT Network connection. Windows Server 2025 Standard Evaluation (Desktop Experience) was installed using an ISO image.
 
@@ -89,7 +89,7 @@ A virtual machine named `WS2025` was created in Oracle VirtualBox with 4 GB RAM 
 | Allocated Memory | 4 GB (4096 MB) |
 | Network Configuration | NAT Network |
 
-<img width="1356" height="740" alt="Windows Server Virtual Machine" src="https://github.com/user-attachments/assets/3d66150d-ad53-456f-93ad-6c4b77c1ea3a" />
+
 
 ## Step 2: Configure Static IPv4 Address and Server Hostname
 
